@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nvidia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://images.nvidia.com" crossorigin/>
+    <link rel="preload" href="https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/var/NVIDIASansVF_NALA_W_Wght.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <nav class="navholder">
+                <div class="hambuger">
+                    <div class="hambuger-items">
+                        <i class="bi bi-list"></i>
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+                <div class="nav-items">
+                    <div class="logo-image">
+                        <a href="">
+                            <svg enable-background="new 0 0 974.7 179.7" version="1.1" viewBox="0 0 974.7 179.7" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="110" height="44">
+                                <title>Artificial Intelligence Computing Leadership from NVIDIA</title>
+                                <path d="m962.1 144.1v-2.7h1.7c0.9 0 2.2 0.1 2.2 1.2s-0.7 1.5-1.8 1.5h-2.1m0 1.9h1.2l2.7 4.7h2.9l-3-4.9c1.5 0.1 2.7-1 2.8-2.5v-0.4c0-2.6-1.8-3.4-4.8-3.4h-4.3v11.2h2.5v-4.7m12.6-0.9c0-6.6-5.1-10.4-10.8-10.4s-10.8 3.8-10.8 10.4 5.1 10.4 10.8 10.4 10.8-3.8 10.8-10.4m-3.2 0c0.2 4.2-3.1 7.8-7.3 8h-0.3c-4.4 0.2-8.1-3.3-8.3-7.7s3.3-8.1 7.7-8.3 8.1 3.3 8.3 7.7c-0.1 0.1-0.1 0.2-0.1 0.3z"></path>
+                                <path d="m578.2 34v118h33.3v-118h-33.3zm-262-0.2v118.1h33.6v-91.7l26.2 0.1c8.6 0 14.6 2.1 18.7 6.5 5.3 5.6 7.4 14.7 7.4 31.2v53.9h32.6v-65.2c0-46.6-29.7-52.9-58.7-52.9h-59.8zm315.7 0.2v118h54c28.8 0 38.2-4.8 48.3-15.5 7.2-7.5 11.8-24.1 11.8-42.2 0-16.6-3.9-31.4-10.8-40.6-12.2-16.5-30-19.7-56.6-19.7h-46.7zm33 25.6h14.3c20.8 0 34.2 9.3 34.2 33.5s-13.4 33.6-34.2 33.6h-14.3v-67.1zm-134.7-25.6l-27.8 93.5-26.6-93.5h-36l38 118h48l38.4-118h-34zm231.4 118h33.3v-118h-33.3v118zm93.4-118l-46.5 117.9h32.8l7.4-20.9h55l7 20.8h35.7l-46.9-117.8h-44.5zm21.6 21.5l20.2 55.2h-41l20.8-55.2z"></path>
+                                <path fill="#76B900" d="m101.3 53.6v-16.2c1.6-0.1 3.2-0.2 4.8-0.2 44.4-1.4 73.5 38.2 73.5 38.2s-31.4 43.6-65.1 43.6c-4.5 0-8.9-0.7-13.1-2.1v-49.2c17.3 2.1 20.8 9.7 31.1 27l23.1-19.4s-16.9-22.1-45.3-22.1c-3-0.1-6 0.1-9 0.4m0-53.6v24.2l4.8-0.3c61.7-2.1 102 50.6 102 50.6s-46.2 56.2-94.3 56.2c-4.2 0-8.3-0.4-12.4-1.1v15c3.4 0.4 6.9 0.7 10.3 0.7 44.8 0 77.2-22.9 108.6-49.9 5.2 4.2 26.5 14.3 30.9 18.7-29.8 25-99.3 45.1-138.7 45.1-3.8 0-7.4-0.2-11-0.6v21.1h170.2v-179.7h-170.4zm0 116.9v12.8c-41.4-7.4-52.9-50.5-52.9-50.5s19.9-22 52.9-25.6v14h-0.1c-17.3-2.1-30.9 14.1-30.9 14.1s7.7 27.3 31 35.2m-73.5-39.5s24.5-36.2 73.6-40v-13.2c-54.4 4.4-101.4 50.4-101.4 50.4s26.6 77 101.3 84v-14c-54.8-6.8-73.5-67.2-73.5-67.2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="menu-bar">
+                        <ul class="menu">
+                            <li class="menu-items">
+                                <a href="" class="menu-links">
+                                    Products
+                                </a>
+                            </li>
+                            <li class="menu-items">
+                                <a href="" class="menu-links">
+                                    Solutions
+                                </a>
+                            </li>
+                            <li class="menu-items">
+                                <a href="" class="menu-links">
+                                    Industries 
+                                </a>
+                            </li>
+                            <li class="menu-items">
+                                <a href="" class="menu-links">
+                                    For You 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-items">
+                    <div class="menu-bar">
+                        <ul class="menu" style="gap: 30px; margin-left: -15px;">
+                            <li class="menu-items">
+                                <a href="" class="menu-links" style="font-size: 14px;">
+                                    Shop 
+                                </a>
+                            </li>
+                            <li class="menu-items">
+                                <a href="" class="menu-links" style="font-size: 14px;">
+                                    Drivers 
+                                </a>
+                            </li>
+                            <li class="menu-items">
+                                <a href="" class="menu-links" style="font-size: 14px;">
+                                    Support 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-icons">
+                        <a href="" class="nav-icons-holder">
+                            <img src="assests/search-icon-download.jpeg" alt="" style="block-size: 30px;">
+                        </a>
+                        <a href="" class="nav-icons-holder">
+                            <img src="assests/profile-image-download.jpeg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-items">
+                    <a href="" class="profile">
+                        <img src="assests/profile-image-download.jpeg" alt="">
+                    </a>
+                </div>  
+            </nav>
+        </div>
+        <div class="header-container">
+            <div class="header-content-holder">
+                <div class="header-items">
+                    <h3>Generative Al</h3>
+                    <h5>December 2-6 | Las VegasAS VEGAS, NV</h5>
+                    <h1>NVIDIA at AWS re:Invent 2024</h1>
+                    <p>Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative Al</p>
+                    <button class="learn-more">
+                        <a href="" style="color: black;">Learn More</a>
+                    </button>
+                </div>
+                <div class="header-items">
+                    <div class="partnership">
+                        <img src="assests/nvidia-and-aws-partnership-v.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="option-holder"> 
+                <div class="option-content">
+                    <h5>Generative AI</5>
+                    <div class="aws">
+                        NVIDIA at AWS
+                        re:invent 2024
+                    </div>
+                </div>
+                <div class="option-content">
+                    <h5>Data Center</5>
+                        <div class="aws">
+                            NVIDIA and Microsoft
+                            Unveil...
+                        </div>
+                </div>
+                <div class="option-content">
+                    <h5>Stimulation</5>
+                        <div class="aws">
+                            NVIDIA Omniverse
+                            Blueprint:...
+                        </div>
+                </div>
+                <div class="option-content">
+                    <h5>Artificial Intelligence</5>
+                        <div class="aws">
+                            NVIDIA Opens
+                            BioNeMo to Scale...
+                        </div>
+                </div>
+                <div class="option-content">
+                    <h5>HPC</5>
+                        <div class="aws">
+                            Google Uses CUDA-Q
+                            to Stimulate...
+                        </div>
+                </div>
+                <div class="option-content">
+                    <h5>HPC</5>
+                        <div class="aws">
+                            cuPYNumeric
+                            HarnessES GPU...
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-container2">
+            <div class="recommended">
+                <div class="recommend-content">
+                    <h2>Recommended For You</h2>
+                    <a href="" class="setting" style="margin-top: 5px;">
+                        <img src="assests/setting-common-cog.svg" alt="">
+                    </a>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="overflowed-container">
+                <div class="holder">
+                    <div class="items" style="background-image: url(assests/cq5dam.thumbnail.319.319-Human-ai.png);">
+                        <div class="text-holder">
+                            <h6>Games | News</h6>
+                            <h4>Frames Win Games</h4>
+                        </div>
+                    </div>
+                    <div class="items" style="background-image: url(assests/cq5dam.thumbnail.319.319-hardware.png);">
+                        <div class="text-holder">
+                            <h6>Games | Hardware</h6>
+                            <h4>Upgrade Your Sleigh</h4>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="text-holder">
+                            <h6>Games | News</h6>
+                            <h4>GeForce RTX 40 Series Graphics Cards</h4>
+                        </div>
+                    </div>
+                    <div class="items" style="background-image: url(assests/cq5dam.thumbnail.319.319-game-studio.png);">
+                        <div class="text-holder">
+                            <h6>Games | News</h6>
+                            <h4>NVIDIA App</h4>
+                        </div>
+                    </div>
+                    <div class="items" style="background-image: url(assests/cq5dam.thumbnail.600.338-mark.png);">
+                        <div class="text-holder">
+                            <h6>Special Event | Event</h6>
+                            <h4>Jensen Huang and Mark Zuckerberg on AI Breakthroughs</h4>
+                        </div>
+                    </div>
+                    <div class="items" style="background-image: url(assests/cq5dam.thumbnail.600.338-laptops.png);">
+                        <div class="text-holder">
+                            <h6>Games | News</h6>
+                            <h4>GeForce RTX 40 Series Laptops</h4>
+                        </div>
+                    </div>
+                    <div class="items" style="background-image: url(assests/cq5dam.thumbnail.319.319-cartoons.png);">
+                        <div class="text-holder">
+                            <h6>Generative AI | Blog</h6>
+                            <h4>Efficiency Meets Personalization: AI Agents Boost Customer...</h4>
+                        </div>
+                    </div>
+                    <div class="items" style="background-image: url(assests/nemo-curator-webinar-sfg.jpeg);">
+                        <div class="text-holder">
+                            <h6>Automotive | Blog</h6>
+                            <h4>Volvo Cars EX90 Built on NVIDIA Accelerated Computing and AI</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gtc-2025-holder">
+                <div class="holders">
+                    <img src="assests/GTC23-Lockup.svg" alt="">
+                </div>
+                <div class="holders" style="padding-top: 10px;">
+                    <h2>GTC 2025 Registration is Now Open</h2>
+                    <p>Join thousands of developers, innovators, and business leaders on March 17–20 to experience how AI and accelerated computing are helping humanity solve our most complex challenges. 
+                        <span>
+                            <a href="" class="register">
+                                Register With Early-Bird Pricing 
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="overflowed-holder">
+            <div class="recommended Artificial">
+                <div class="recommend-content">
+                    <h2 style="font-size: 28px; color: black;">Gaming and Creating</h2>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrolling-container">
+                <div class="scrolling-holder">
+                    <div class="text-wrap">
+                        <p>NVIDIA GeForce RTX™ powers the world’s fastest GPUs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI-powered DLSS, and much more in games and applications, on your desktop, laptop, in the cloud, or in your living room.</p>
+                        <a href="" class="quick">
+                            <i class="fa-solid fa-chevron-down" style="color: hsl(82, 99%, 41%);"></i>
+                            Quick Links
+                        </a> 
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/geforce-ces2025-tunein-nv-sfg-thumbnail-1920x1080-matrix.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Announcement</h4>
+                            <h3>NVIDIA and Partners Scale Japan’s AI Workforce</h3>
+                            <p>NVIDIA NIM™, now on Amazon Services, speeds time to market, maintains security of gen AI, improves TCO.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NVIDIA at AWS re:Invent 2024</h3>
+                            <p>Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative AI.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/cq5dam.thumbnail.319.319-human.png);">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>Efficiency Meets Personalization: AI Agents Boost Customer Service</h3>
+                            <p>See how AI agents can improve efficiency and customer satisfaction and scale customer support.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/ai-slackbot-llm-sfg.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Enhance Workflows With a Custom Slackbot LLM Agent </h3>
+                            <p>Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/sfg-softbank-ai-jp.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI-RAN Goes Live and Unlocks New AI Opportunity for Telcos</h3>
+                            <p>NVIDIA helps SoftBank turn AI-RAN into reality in their successful outdoor trial in Japan.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/japan-ai-summit-healthcare-and-robotics-multi-image-ari.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Japan Develops Next-Generation Drug Design and Digital Health Platforms</h3>
+                            <p>Developing sovereign AI capabilities to power drug discovery, accelerated genomics, and medical devices.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/nemo-cosmos-sfg-tokenizer.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NeMo Curator and Cosmos Tokenizers Supercharge Developers</h3>
+                            <p>Just announced—NVIDIA NeMo™ will support end-to-end pipeline for developing multimodal models.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/ai-blueprint-video-agent-ari-video-search.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Announcement</h4>
+                            <h3>Build a Video Search and Summarization Agent</h3>
+                            <p>The NVIDIA AI Blueprint makes it easy to build interactive visual AI agents capable of understanding activity within massive volumes of videos using VLM, LLM, and RAG.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/nemo-curator-webinar-sfg.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Webinar</h4>
+                            <h3> Enhance Generative AI Model Accuracy With Quality Data Processing</h3>
+                            <p>Build data processing pipelines to create high-quality multimodal datasets for training and customization.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/anythingllm-nv-sfg-2560x1440.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI Decoded: AnythingLLM</h3>
+                            <p>How RTX AI PCs unlock AI agents that autonomously solve complex, multi-step problems with generative AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="overflowed-holder">
+            <div class="recommended Artificial">
+                <div class="recommend-content">
+                    <h2 style="font-size: 28px; color: black;">Artificial Intelligence</h2>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrolling-container">
+                <div class="scrolling-holder">
+                    <div class="text-wrap">
+                        <p>NVIDIA RTX™ and NVIDIA Omniverse™ deliver the performance to help professionals, creators, developers, and students worldwide enhance creative workflows and build, operate, and connect metaverse applications.</p>
+                        <a href="" class="quick">
+                            <i class="fa-solid fa-chevron-down" style="color: hsl(82, 99%, 41%);"></i>
+                            Quick Links
+                        </a> 
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/ai-blueprint-techblog-1920x1080-new-robot.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Stimulation | Blog</h4>
+                            <h3>Generative AI-Enabled Content Creation With OpenUSD</h3>
+                            <p>NVIDIA Omniverse™ devs are enabling brands to deliver personalized, high-quality visuals at scale.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/nemo-curator-webinar-sfg.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Data Center | Blog</h4>
+                            <h3>NVIDIA and Microsoft Debut New Product Integrations</h3>
+                            <p>New integrations at Microsoft Ignite advance full-stack AI development on Microsoft platforms.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/foxconn-sfg.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Simulation | Blog</h4>
+                            <h3>Foxconn Expands Blackwell Testing and Production With New Factories</h3>
+                            <p> Foxconn uses digital twins, industrial AI built on NVIDIA Omniverse™ to launch facilities rapidly.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/openusd-1920x1080.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Simulation | Course</h4>
+                            <h3>Accelerate Your 3D Development With OpenUSD</h3>
+                            <p>Free DLI training—kickstart your OpenUSD journey with new Learn OpenUSD courses.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/wpp-coca-cola-ari.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Simulation | Announcement</h4>
+                            <h3>The Coca-Cola Company and WPP Build Generative AI Content Engine With NVIDIA NIM and Omniverse WPP, The Coca-Cola Company</h3>
+                            <p>The Coca-Cola Company and WPP Build Generative AI Content Engine With NVIDIA NIM and Omniverse World marketing leader WPP is enabling the beverage giant to accelerate iteration on creative campaigns at a global scale with USD Search and USD Code NVIDIA NIM™ microservices.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/fvdb-sfg.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Simulation | Blog</h4>
+                            <h3>NVIDIA Introduces fVDB to Build Bigger Digital Models of the World</h3>
+                            <p>fVDB builds AI operators on top of OpenVDB to enable reality-scale, AI-ready digital twins.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/nvidia-omniverse-ito-synctwin-sfg.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Simulation | Blog</h4>
+                            <h3>Democratizing Industrial Digital Twins With Gen AI and OpenUSD</h3>
+                            <p>SyncTwin’s application enables teams to optimize industrial efficiency while enhancing sustainability across manufacturing processes.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/siggraph-24-fireside-chat-jensen-huang-sfg.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>SIGGRAPH Event | Event</h4>
+                            <h3>Fireside Chat with NVIDIA CEO Jensen Huang</h3>
+                            <p>Don’t miss this SIGGRAPH 2024 discussion with Jensen Huang and WIRED Senior Writer, Lauren Goode.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/vfi-isaac-sim-1920x1080.jpeg);">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Simplify AI Agent Management With NVIDIA AI Enterprise</h3>
+                            <p>NVIDIA AI Enterprise’s latest release has enhanced reliability, streamlined AI agent deployment.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items" style="background-image: url(assests/nvidia-omniverse-may24-ito-softserve.jpeg);">
+                        <div class="text-holder generative">
+                            <h6>SoftServe</h6>
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI Decoded: AnythingLLM</h3>
+                            <p>
+                                
+                                Simulation | Blog
+                                SoftServe and Continental Drive Digitalization With OpenUSD
+                                OpenUSD-powered virtual factory solutions help enhance manufacturing workflows for leading German automotive technology company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overflowed-holder">
+            <div class="recommended Artificial">
+                <div class="recommend-content">
+                    <h2 style="font-size: 28px; color: black;">Artificial Intelligence</h2>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrolling-container">
+                <div class="scrolling-holder">
+                    <div class="text-wrap">
+                        <p>AI is powering change in every industry. From generative AI and speech recognition to medical imaging and improved supply chain management, AI is providing enterprises the compute power, tools, and algorithms their teams need to do their life's work.</p>
+                        <a href="" class="quick">
+                            <i class="fa-solid fa-chevron-down" style="color: hsl(82, 99%, 41%);"></i>
+                            Quick Links
+                        </a> 
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NVIDIA at AWS re:Invent 2024</h3>
+                            <p>Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative AI.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>Efficiency Meets Personalization: AI Agents Boost Customer Service</h3>
+                            <p>See how AI agents can improve efficiency and customer satisfaction and scale customer support.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Enhance Workflows With a Custom Slackbot LLM Agent </h3>
+                            <p>Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI-RAN Goes Live and Unlocks New AI Opportunity for Telcos</h3>
+                            <p>NVIDIA helps SoftBank turn AI-RAN into reality in their successful outdoor trial in Japan.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Japan Develops Next-Generation Drug Design and Digital Health Platforms</h3>
+                            <p>Developing sovereign AI capabilities to power drug discovery, accelerated genomics, and medical devices.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NeMo Curator and Cosmos Tokenizers Supercharge Developers</h3>
+                            <p>Just announced—NVIDIA NeMo™ will support end-to-end pipeline for developing multimodal models.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Announcement</h4>
+                            <h3>Build a Video Search and Summarization Agent</h3>
+                            <p>The NVIDIA AI Blueprint makes it easy to build interactive visual AI agents capable of understanding activity within massive volumes of videos using VLM, LLM, and RAG.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3> Enhance Generative AI Model Accuracy With Quality Data Processing</h3>
+                            <p>Build data processing pipelines to create high-quality multimodal datasets for training and customization.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Simplify AI Agent Management With NVIDIA AI Enterprise</h3>
+                            <p>NVIDIA AI Enterprise’s latest release has enhanced reliability, streamlined AI agent deployment.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI Decoded: AnythingLLM</h3>
+                            <p>How RTX AI PCs unlock AI agents that autonomously solve complex, multi-step problems with generative AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="overflowed-holder">
+            <div class="recommended Artificial">
+                <div class="recommend-content">
+                    <h2 style="font-size: 28px; color: black;">Artificial Intelligence</h2>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrolling-container">
+                <div class="scrolling-holder">
+                    <div class="text-wrap">
+                        <p>AI is powering change in every industry. From generative AI and speech recognition to medical imaging and improved supply chain management, AI is providing enterprises the compute power, tools, and algorithms their teams need to do their life's work.</p>
+                        <a href="" class="quick">
+                            <i class="fa-solid fa-chevron-down" style="color: hsl(82, 99%, 41%);"></i>
+                            Quick Links
+                        </a> 
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NVIDIA at AWS re:Invent 2024</h3>
+                            <p>Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative AI.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>Efficiency Meets Personalization: AI Agents Boost Customer Service</h3>
+                            <p>See how AI agents can improve efficiency and customer satisfaction and scale customer support.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Enhance Workflows With a Custom Slackbot LLM Agent </h3>
+                            <p>Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI-RAN Goes Live and Unlocks New AI Opportunity for Telcos</h3>
+                            <p>NVIDIA helps SoftBank turn AI-RAN into reality in their successful outdoor trial in Japan.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Japan Develops Next-Generation Drug Design and Digital Health Platforms</h3>
+                            <p>Developing sovereign AI capabilities to power drug discovery, accelerated genomics, and medical devices.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NeMo Curator and Cosmos Tokenizers Supercharge Developers</h3>
+                            <p>Just announced—NVIDIA NeMo™ will support end-to-end pipeline for developing multimodal models.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Announcement</h4>
+                            <h3>Build a Video Search and Summarization Agent</h3>
+                            <p>The NVIDIA AI Blueprint makes it easy to build interactive visual AI agents capable of understanding activity within massive volumes of videos using VLM, LLM, and RAG.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3> Enhance Generative AI Model Accuracy With Quality Data Processing</h3>
+                            <p>Build data processing pipelines to create high-quality multimodal datasets for training and customization.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Simplify AI Agent Management With NVIDIA AI Enterprise</h3>
+                            <p>NVIDIA AI Enterprise’s latest release has enhanced reliability, streamlined AI agent deployment.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI Decoded: AnythingLLM</h3>
+                            <p>How RTX AI PCs unlock AI agents that autonomously solve complex, multi-step problems with generative AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflowed-holder">
+            <div class="recommended Artificial">
+                <div class="recommend-content">
+                    <h2 style="font-size: 28px; color: black;">Artificial Intelligence</h2>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrolling-container">
+                <div class="scrolling-holder">
+                    <div class="text-wrap">
+                        <p>AI is powering change in every industry. From generative AI and speech recognition to medical imaging and improved supply chain management, AI is providing enterprises the compute power, tools, and algorithms their teams need to do their life's work.</p>
+                        <a href="" class="quick">
+                            <i class="fa-solid fa-chevron-down" style="color: hsl(82, 99%, 41%);"></i>
+                            Quick Links
+                        </a> 
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NVIDIA at AWS re:Invent 2024</h3>
+                            <p>Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative AI.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>Efficiency Meets Personalization: AI Agents Boost Customer Service</h3>
+                            <p>See how AI agents can improve efficiency and customer satisfaction and scale customer support.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Enhance Workflows With a Custom Slackbot LLM Agent </h3>
+                            <p>Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI-RAN Goes Live and Unlocks New AI Opportunity for Telcos</h3>
+                            <p>NVIDIA helps SoftBank turn AI-RAN into reality in their successful outdoor trial in Japan.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Japan Develops Next-Generation Drug Design and Digital Health Platforms</h3>
+                            <p>Developing sovereign AI capabilities to power drug discovery, accelerated genomics, and medical devices.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NeMo Curator and Cosmos Tokenizers Supercharge Developers</h3>
+                            <p>Just announced—NVIDIA NeMo™ will support end-to-end pipeline for developing multimodal models.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Announcement</h4>
+                            <h3>Build a Video Search and Summarization Agent</h3>
+                            <p>The NVIDIA AI Blueprint makes it easy to build interactive visual AI agents capable of understanding activity within massive volumes of videos using VLM, LLM, and RAG.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3> Enhance Generative AI Model Accuracy With Quality Data Processing</h3>
+                            <p>Build data processing pipelines to create high-quality multimodal datasets for training and customization.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Simplify AI Agent Management With NVIDIA AI Enterprise</h3>
+                            <p>NVIDIA AI Enterprise’s latest release has enhanced reliability, streamlined AI agent deployment.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI Decoded: AnythingLLM</h3>
+                            <p>How RTX AI PCs unlock AI agents that autonomously solve complex, multi-step problems with generative AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflowed-holder">
+            <div class="recommended Artificial">
+                <div class="recommend-content">
+                    <h2 style="font-size: 28px; color: black;">Artificial Intelligence</h2>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrolling-container">
+                <div class="scrolling-holder">
+                    <div class="text-wrap">
+                        <p>AI is powering change in every industry. From generative AI and speech recognition to medical imaging and improved supply chain management, AI is providing enterprises the compute power, tools, and algorithms their teams need to do their life's work.</p>
+                        <a href="" class="quick">
+                            <i class="fa-solid fa-chevron-down" style="color: hsl(82, 99%, 41%);"></i>
+                            Quick Links
+                        </a> 
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NVIDIA at AWS re:Invent 2024</h3>
+                            <p>Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative AI.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>Efficiency Meets Personalization: AI Agents Boost Customer Service</h3>
+                            <p>See how AI agents can improve efficiency and customer satisfaction and scale customer support.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Enhance Workflows With a Custom Slackbot LLM Agent </h3>
+                            <p>Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI-RAN Goes Live and Unlocks New AI Opportunity for Telcos</h3>
+                            <p>NVIDIA helps SoftBank turn AI-RAN into reality in their successful outdoor trial in Japan.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Japan Develops Next-Generation Drug Design and Digital Health Platforms</h3>
+                            <p>Developing sovereign AI capabilities to power drug discovery, accelerated genomics, and medical devices.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NeMo Curator and Cosmos Tokenizers Supercharge Developers</h3>
+                            <p>Just announced—NVIDIA NeMo™ will support end-to-end pipeline for developing multimodal models.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Announcement</h4>
+                            <h3>Build a Video Search and Summarization Agent</h3>
+                            <p>The NVIDIA AI Blueprint makes it easy to build interactive visual AI agents capable of understanding activity within massive volumes of videos using VLM, LLM, and RAG.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3> Enhance Generative AI Model Accuracy With Quality Data Processing</h3>
+                            <p>Build data processing pipelines to create high-quality multimodal datasets for training and customization.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Simplify AI Agent Management With NVIDIA AI Enterprise</h3>
+                            <p>NVIDIA AI Enterprise’s latest release has enhanced reliability, streamlined AI agent deployment.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI Decoded: AnythingLLM</h3>
+                            <p>How RTX AI PCs unlock AI agents that autonomously solve complex, multi-step problems with generative AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflowed-holder">
+            <div class="recommended Artificial">
+                <div class="recommend-content">
+                    <h2 style="font-size: 28px; color: black;">Artificial Intelligence</h2>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrolling-container">
+                <div class="scrolling-holder">
+                    <div class="text-wrap">
+                        <p>AI is powering change in every industry. From generative AI and speech recognition to medical imaging and improved supply chain management, AI is providing enterprises the compute power, tools, and algorithms their teams need to do their life's work.</p>
+                        <a href="" class="quick">
+                            <i class="fa-solid fa-chevron-down" style="color: hsl(82, 99%, 41%);"></i>
+                            Quick Links
+                        </a> 
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NVIDIA at AWS re:Invent 2024</h3>
+                            <p>Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative AI.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>Efficiency Meets Personalization: AI Agents Boost Customer Service</h3>
+                            <p>See how AI agents can improve efficiency and customer satisfaction and scale customer support.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Enhance Workflows With a Custom Slackbot LLM Agent </h3>
+                            <p>Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI-RAN Goes Live and Unlocks New AI Opportunity for Telcos</h3>
+                            <p>NVIDIA helps SoftBank turn AI-RAN into reality in their successful outdoor trial in Japan.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Japan Develops Next-Generation Drug Design and Digital Health Platforms</h3>
+                            <p>Developing sovereign AI capabilities to power drug discovery, accelerated genomics, and medical devices.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NeMo Curator and Cosmos Tokenizers Supercharge Developers</h3>
+                            <p>Just announced—NVIDIA NeMo™ will support end-to-end pipeline for developing multimodal models.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Announcement</h4>
+                            <h3>Build a Video Search and Summarization Agent</h3>
+                            <p>The NVIDIA AI Blueprint makes it easy to build interactive visual AI agents capable of understanding activity within massive volumes of videos using VLM, LLM, and RAG.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3> Enhance Generative AI Model Accuracy With Quality Data Processing</h3>
+                            <p>Build data processing pipelines to create high-quality multimodal datasets for training and customization.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Simplify AI Agent Management With NVIDIA AI Enterprise</h3>
+                            <p>NVIDIA AI Enterprise’s latest release has enhanced reliability, streamlined AI agent deployment.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI Decoded: AnythingLLM</h3>
+                            <p>How RTX AI PCs unlock AI agents that autonomously solve complex, multi-step problems with generative AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflowed-holder">
+            <div class="recommended Artificial">
+                <div class="recommend-content">
+                    <h2 style="font-size: 28px; color: black;">Artificial Intelligence</h2>
+                </div>
+                <div class="recommend-content">
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="chevron">
+                        <a href="" class="chevrons">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrolling-container">
+                <div class="scrolling-holder">
+                    <div class="text-wrap">
+                        <p>AI is powering change in every industry. From generative AI and speech recognition to medical imaging and improved supply chain management, AI is providing enterprises the compute power, tools, and algorithms their teams need to do their life's work.</p>
+                        <a href="" class="quick">
+                            <i class="fa-solid fa-chevron-down" style="color: hsl(82, 99%, 41%);"></i>
+                            Quick Links
+                        </a> 
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NVIDIA at AWS re:Invent 2024</h3>
+                            <p>Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative AI.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>Efficiency Meets Personalization: AI Agents Boost Customer Service</h3>
+                            <p>See how AI agents can improve efficiency and customer satisfaction and scale customer support.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Enhance Workflows With a Custom Slackbot LLM Agent </h3>
+                            <p>Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI-RAN Goes Live and Unlocks New AI Opportunity for Telcos</h3>
+                            <p>NVIDIA helps SoftBank turn AI-RAN into reality in their successful outdoor trial in Japan.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Japan Develops Next-Generation Drug Design and Digital Health Platforms</h3>
+                            <p>Developing sovereign AI capabilities to power drug discovery, accelerated genomics, and medical devices.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3>NeMo Curator and Cosmos Tokenizers Supercharge Developers</h3>
+                            <p>Just announced—NVIDIA NeMo™ will support end-to-end pipeline for developing multimodal models.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Announcement</h4>
+                            <h3>Build a Video Search and Summarization Agent</h3>
+                            <p>The NVIDIA AI Blueprint makes it easy to build interactive visual AI agents capable of understanding activity within massive volumes of videos using VLM, LLM, and RAG.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Generative AI | Blog</h4>
+                            <h3> Enhance Generative AI Model Accuracy With Quality Data Processing</h3>
+                            <p>Build data processing pipelines to create high-quality multimodal datasets for training and customization.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>Simplify AI Agent Management With NVIDIA AI Enterprise</h3>
+                            <p>NVIDIA AI Enterprise’s latest release has enhanced reliability, streamlined AI agent deployment.</p>
+                        </div>
+                    </div>
+                    <div class="scrolling-items">
+                        <div class="text-holder generative">
+                            <h4>Artificial Intelligence | Blog</h4>
+                            <h3>AI Decoded: AnythingLLM</h3>
+                            <p>How RTX AI PCs unlock AI agents that autonomously solve complex, multi-step problems with generative AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-holder">
+                <div class="footer-content-parent">
+                    <div class="footer-content-holder">
+                        <h2>Company Information</h2>
+                        <ul class="footer-text-links">
+                            <li class="">
+                                <a href="" class="footer-links">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Company Overview
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Investors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Venture Capital (NVentures)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    NVIDIA Foundation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Research
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Corporate Sustainability
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Technologies
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Careers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-content-holder">
+                        <h2>News and Events</h2>
+                        <ul class="footer-text-links">
+                            <li class="">
+                                <a href="" class="footer-links">
+                                    Newsroom
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="footer-links">
+                                    Company Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Technical Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Webinars
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Stay Informed
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Events Calendar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    GTC AI Conference
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    NVIDIA On-Demand
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-content-holder">
+                        <h2>Popular Links</h2>
+                        <ul class="footer-text-links">
+                            <li class="">
+                                <a href="" class="footer-links">
+                                    Developers
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="footer-links">
+                                    Partners
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Executive Insights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Startups and VCs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    NVIDIA Connect for ISVs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Technical Training
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Training for IT Professionals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-links">
+                                    Professional Services for Data Science
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nvidia-news-container">
+                    <div class="nvidia-news">
+                        <div>
+                            <img src="assests/inbox-icon" alt="">
+                        </div>
+                        <div>
+                            Sign Up for NVIDIA News
+                        </div>
+                        <button class="subscribe">
+                            <a href="" style="color: black;">Subscribe</a>
+                        </button>
+                    </div>
+                    <div class="social-media-icons">
+                        <div class="follow">
+                            Follow NVIDIA
+                        </div>
+                        <div class="media-icons">
+                            <a href="" class="icon">    
+                                <i class="fa-brands fa-facebook-f" title="Facebook"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fa-brands fa-instagram" title="Instagram"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fa-brands fa-x-twitter" title="Twitter"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fa-brands fa-youtube" title="YouTube"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer-end">
+                <div class="footer-logo">
+                    <div>
+                        <svg class="global-footer__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 407.8 1000 184.4" enable-background="new 0 407.8 1000 184.4" xml:space="preserve">
+                            <title>NVIDIA</title>
+                            <g id="nvidia-logo">
+                                <path d="M987.1 555.7v-2.8h1.7c0.9 0 2.3 0.1 2.3 1.2 0 1.2-0.7 1.5-1.8 1.5H987.1M987.1 557.6h1.2l2.8 4.8h3l-3.1-5c1.5-0.1 2.9-0.8 2.9-3 0-2.7-1.8-3.5-4.9-3.5h-4.4v11.5h2.6L987.1 557.6M1000 556.7c0-6.8-5.2-10.7-11.1-10.7 -5.8 0-11.1 3.9-11.1 10.7 0 6.8 5.2 10.7 11.1 10.7S1000 563.5 1000 556.7M996.8 556.7c0 4.9-3.6 8.2-7.9 8.2l0 0c-4.4 0-7.9-3.3-7.9-8.2 0-4.9 3.6-8.2 7.9-8.2C993.2 548.6 996.8 551.9 996.8 556.7z"></path>
+                                <path d="M593.2 442.7v121.1h34.2V442.7H593.2zM324.4 442.5v121.2h34.5v-94.1l26.9 0.1c8.8 0 15 2.2 19.2 6.7 5.4 5.7 7.6 15.1 7.6 32v55.3H446v-66.9c0-47.8-30.5-54.3-60.2-54.3C385.8 442.5 324.4 442.5 324.4 442.5zM648.3 442.7v121.1h55.4c29.5 0 39.2-4.9 49.6-15.9 7.4-7.7 12.1-24.7 12.1-43.3 0-17-4-32.2-11.1-41.7 -12.5-16.9-30.8-20.2-58.1-20.2H648.3zM682.2 469h14.7c21.3 0 35.1 9.5 35.1 34.4 0 24.8-13.7 34.4-35.1 34.4h-14.7V469zM544 442.7l-28.5 95.9 -27.3-95.9h-36.9l39 121.1h49.2l39.3-121.1H544zM781.4 563.7h34.2v-121h-34.2V563.7zM877.2 442.7l-47.7 121h33.7l7.6-21.3h56.5l7.2 21.3h36.6l-48.2-121H877.2zM899.4 464.8l20.7 56.6H878L899.4 464.8z"></path>
+                                <path d="M103.9 462.8v-16.6c1.6-0.1 3.3-0.2 4.9-0.2 45.6-1.4 75.4 39.1 75.4 39.1s-32.2 44.8-66.8 44.8c-5 0-9.4-0.8-13.4-2.2v-50.5c17.7 2.2 21.3 10 32 27.7l23.7-20c0 0-17.3-22.7-46.5-22.7C110 462.3 106.9 462.5 103.9 462.8M103.9 407.8v24.8c1.6-0.1 3.3-0.2 4.9-0.3 63.3-2.2 104.6 51.9 104.6 51.9s-47.4 57.7-96.7 57.7c-4.5 0-8.7-0.4-12.7-1.1v15.4c3.4 0.4 7 0.7 10.6 0.7 46 0 79.2-23.5 111.4-51.2 5.3 4.3 27.2 14.7 31.7 19.2 -30.6 25.6-101.9 46.3-142.3 46.3 -3.9 0-7.6-0.2-11.3-0.6v21.6h174.7V407.8H103.9zM103.9 527.8v13.1c-42.5-7.6-54.3-51.8-54.3-51.8s20.4-22.6 54.3-26.3v14.4c0 0 0 0-0.1 0 -17.7-2.2-31.7 14.5-31.7 14.5S80 519.6 103.9 527.8M28.4 487.2c0 0 25.2-37.1 75.5-41v-13.5C48.2 437.2 0 484.4 0 484.4s27.3 79 103.9 86.3v-14.4C47.7 549.2 28.4 487.2 28.4 487.2z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <a href="" class="united-stated">
+                            United States
+                        </a>
+                    </div>
+                </div>
+                <div class="privacy-holder">
+                    <ul class="privacy-holder-items">
+                        <li>
+                            <a href="" class="privacy-text">
+                                Privacy Policy 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="privacy-text">
+                                Manage My Privacy 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="privacy-text">
+                                Do Not Sell or Share My Data
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="privacy-text">
+                                Terms of Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="privacy-text">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="privacy-text">
+                                Corporate Policies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="privacy-text">
+                                Product Security
+                            </a>
+                        </li>
+                        <li style="border: none;">
+                            <a href="" class="privacy-text">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="copy-right">
+                        <p>Copyright © 2024 NVIDIA Corporation</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
